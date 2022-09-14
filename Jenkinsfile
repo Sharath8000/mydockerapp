@@ -21,7 +21,7 @@ pipeline{
                     docker login -u admin -p admin@123 http://34.226.202.185:9001/repository/Docker-Hosted-Repo/
                     
                     echo " ********** Tagging the image ************"
-                    docker tag firstapp http://34.226.202.185:9001/repository/Docker-Hosted-Repo/sharath-vikas-dtr/myfirstapp                   
+                    docker tag firstapp http://34.226.202.185:9001/repository/Docker-Hosted-Repo/sharath-vikas-dtr:myapp-1.1                 
                     
                     echo "********** Push to Nexus DTR *************"
                     docker push http://34.226.202.185:9001/repository/Docker-Hosted-Repo/sharath-vikas-dtr/myfirstapp
