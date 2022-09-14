@@ -40,7 +40,11 @@ pipeline{
     }
     post {
         always {
-            sh 'rm -rf /var/lib/jenkins/workspace/'
+            sh '''
+            cd ..
+            rm -rf *
+            echo "Files are deleted"
+               '''
         }
     }
 }
