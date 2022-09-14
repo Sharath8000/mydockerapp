@@ -10,7 +10,7 @@ pipeline{
                whoami
                echo " ********root888888888**************"
                
-               git clone https://github.com/Sharath8000/mydockerapp.git                
+               git https://github.com/Sharath8000/mydockerapp.git                
                
                '''
             }
