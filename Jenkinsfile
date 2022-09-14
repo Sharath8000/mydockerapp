@@ -9,7 +9,6 @@ pipeline{
                sh '''
                whoami
                echo " ********root888888888**************"
-               
                git clone https://github.com/Sharath8000/mydockerapp.git                
                
                '''
