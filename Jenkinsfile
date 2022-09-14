@@ -41,7 +41,11 @@ pipeline{
     post {
         cleanup {
             sh '''
+            echo "inside cleanup phase"
+            ls -ltra
+            echo "going one step back"
             cd ..
+            ls -ltra
             rm -rf *
             echo "Files are deleted......."
             
