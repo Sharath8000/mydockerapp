@@ -43,7 +43,7 @@ pipeline{
             sh '''
             cd ..
             rm -rf *
-            echo "Files are deleted..."
+            echo "Files are deleted......."
             
             '''
         }
