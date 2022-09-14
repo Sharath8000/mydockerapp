@@ -31,7 +31,8 @@ pipeline{
                     
                     echo "Image has been pushed to Nexus DTR"
                     
-                    
+                    ls -ltra
+                    pwd
                     
                     '''
               }
