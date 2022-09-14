@@ -14,7 +14,7 @@ pipeline{
                     sh '''
                     
                     echo " *********** Building the image ***********"
-                    docker build -t firstsapp -f ./Dockerfile
+                    docker build -t firstsapp ./Dockerfile
                     
                     echo " ********** Login to Nexus DTR *********** "
                     docker login -u admin -p admin@123 http://34.226.202.185:9001/repository/Docker-Hosted-Repo/
