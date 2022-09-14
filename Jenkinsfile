@@ -37,4 +37,9 @@ pipeline{
               }
          }
     }
+    post {
+        always {
+            sh 'rm -rf /var/lib/jenkins/workspace/'
+        }
+    }
 }
