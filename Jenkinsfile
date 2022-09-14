@@ -1,13 +1,12 @@
 pipeline{
-    agent {label 'master-agent'}
+    agent {label 'master'}
     //environment {
       //  PATH = "$PATH:/opt/apache-maven-3.8.2/bin"
     //}
     stages{
        stage('GetCode'){
             steps{
-              
-               git 'https://github.com/Sharath8000/mydockerapp.git'
+              git 'https://github.com/Sharath8000/mydockerapp.git'
                
             }
          }        
