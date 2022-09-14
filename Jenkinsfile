@@ -38,7 +38,7 @@ pipeline{
               }
          }
     }
-    /*post {
+    post {
         always {
             sh '''
             cd ..
@@ -47,5 +47,5 @@ pipeline{
             
             '''
         }
-    }*/
+    }
 }
