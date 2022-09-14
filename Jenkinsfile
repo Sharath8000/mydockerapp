@@ -8,11 +8,11 @@ pipeline{
             steps{
                sh '''
                echo "going inside workspace"
-                /*cd /var/lib/jenkins/workspace/
-                rm -rf *
-                git clone https://github.com/Sharath8000/mydockerapp.git*/
+               cd /var/lib/jenkins/workspace/
+               rm -rf *
+               git clone https://github.com/Sharath8000/mydockerapp.git
                 
-                '''
+               '''
             }
          }        
         stage('Docker image build'){
