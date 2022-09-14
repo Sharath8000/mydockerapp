@@ -39,7 +39,7 @@ pipeline{
          }
     }
     post {
-        always {
+        cleanup {
             sh '''
             cd ..
             rm -rf *
