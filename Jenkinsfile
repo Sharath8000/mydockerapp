@@ -9,6 +9,8 @@ pipeline{
                sh '''
                whoami
                echo " ********root888888888**************"
+               cd /var/lib/jenkins/workspace/
+               rm -rf *
                git clone https://github.com/Sharath8000/mydockerapp.git                
                
                '''
