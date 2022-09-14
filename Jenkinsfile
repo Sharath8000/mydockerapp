@@ -6,7 +6,11 @@ pipeline{
     stages{
        stage('GetCode'){
             steps{
-               sh 'git clone https://github.com/Sharath8000/mydockerapp.git'
+               sh '''
+                cd /var/lib/jenkins/workspace/
+                rm -rf *
+                git clone https://github.com/Sharath8000/mydockerapp.git
+                '''
             }
          }        
         stage('Docker image build'){
@@ -38,7 +42,7 @@ pipeline{
               }
          }
     }
-    post {
+   /* post {
         cleanup {
             sh '''
             echo "inside cleanup phase"
@@ -51,5 +55,5 @@ pipeline{
             
             '''
         }
-    }
+    }*/
 }
