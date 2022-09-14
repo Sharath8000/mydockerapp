@@ -8,9 +8,9 @@ pipeline{
             steps{
                sh '''
                echo "going inside workspace"
-                cd /var/lib/jenkins/workspace/
+                /*cd /var/lib/jenkins/workspace/
                 rm -rf *
-                git clone https://github.com/Sharath8000/mydockerapp.git
+                git clone https://github.com/Sharath8000/mydockerapp.git*/
                 
                 '''
             }
