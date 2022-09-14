@@ -18,16 +18,16 @@ pipeline{
                     docker build -t firstsapp .
                     
                     echo " ********** Login to Nexus DTR ************* "
-                    docker login -u admin -p admin@123 http://34.226.202.185:9001/repository/Docker-Hosted-Repo/
+                    docker login -u admin -p admin@123 http://34.226.202.185:9001/repository/dockerdtr/
                     
                     echo " ********** Tagging the image ************"
-                    docker tag firstapp http://34.226.202.185:9001/repository/Docker-Hosted-Repo/sharath-vikas-dtr:myapp                
+                    docker tag firstsapp 34.226.202.185:9001/repository/dockerdtr/vikas-sharath:myapp.1.0                
                     
                     echo "********** Push to Nexus DTR *************"
-                    docker push http://34.226.202.185:9001/repository/Docker-Hosted-Repo/sharath-vikas-dtr/myfirstapp
+                    docker push 34.226.202.185:9001/repository/dockerdtr/vikas-sharath:myapp.1.0
                     
                     echo " ********** Logging out from  Nexus DTR *********** "
-                    docker logout http://34.226.202.185:9001/repository/Docker-Hosted-Repo/
+                    docker logout http://34.226.202.185:9001/repository/dockerdtr/
                     
                     echo "Image has been pushed to Nexus DTR"
                     
