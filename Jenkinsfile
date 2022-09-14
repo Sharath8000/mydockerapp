@@ -6,7 +6,7 @@ pipeline{
     stages{
        stage('GetCode'){
             steps{
-               git https://github.com/Sharath8000/mydockerapp.git'
+               git 'https://github.com/Sharath8000/mydockerapp.git'
             }
          }        
         stage('Docker image build'){
