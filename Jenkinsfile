@@ -6,7 +6,7 @@ pipeline{
     stages{
        stage('GetCode'){
             steps{
-                git 'https://github.com/Sharath8000/hello-world.git'
+               sh 'git clone https://github.com/Sharath8000/hello-world.git'
             }
          }        
         stage('Docker image build'){
