@@ -13,10 +13,10 @@ pipeline{
               steps {
                     sh '''
                     
-                    echo " *********** Building the image ***********"
+                    echo " *********** Building the image **************"
                     docker build -t firstsapp . 
                     
-                    echo " ********** Login to Nexus DTR *********** "
+                    echo " ********** Login to Nexus DTR ************* "
                     docker login -u admin -p admin@123 http://34.226.202.185:9001/repository/Docker-Hosted-Repo/
                     
                     echo " ********** Tagging the image ************"
